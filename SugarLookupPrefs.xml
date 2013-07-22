@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<main>
+    <prefs>
+        <app_url>https://sugarinternal.sugarondemand.com</app_url>
+        <user>username</user>
+        <password>password</password>
+        <max_results>15</max_results>
+    </prefs>
+    <queries>
+        <query>
+            <keyword>bug</keyword>
+            <module>Bugs</module>
+            <where>bugs.bug_number = {term}</where>
+            <fields>id,name,bug_number,status</fields>
+            <orderBy>date_entered DESC</orderBy>
+        </query>
+        <query>
+            <keyword>case</keyword>
+            <module>Cases</module>
+            <where>cases.case_number = {term}</where>
+            <fields>id,name,case_number,status</fields>
+            <orderBy>date_entered DESC</orderBy>
+        </query>
+        <query>
+            <keyword>itr</keyword>
+            <module>ITRequests</module>
+            <where>itrequests.itrequest_number = {term}</where>
+            <fields>id,name,itrequest_number,status</fields>
+            <orderBy>date_entered DESC</orderBy>
+        </query>
+        <query>
+            <keyword>bugs</keyword>
+            <module>Bugs</module>
+            <where>CONCAT(bugs.name, bugs.description, bugs.work_log) LIKE '%{term}%'</where>
+            <fields>id,name,bug_number,status</fields>
+            <orderBy>date_entered DESC</orderBy>
+        </query>
+        <query>
+            <keyword>cases</keyword>
+            <module>Cases</module>
+            <where>CONCAT(cases.name, cases.description, cases.resolution) LIKE '%{term}%'</where>
+            <fields>id,name,case_number,status</fields>
+            <orderBy>date_entered DESC</orderBy>
+        </query>
+        <query>
+            <keyword>itrs</keyword>
+            <module>ITRequests</module>
+            <where>CONCAT(itrequests.name, itrequests.description, itrequests.resolution) LIKE '%{term}%'</where>
+            <fields>id,name,itrequest_number,status</fields>
+            <orderBy>date_entered DESC</orderBy>
+        </query>
+    </queries>
+</main>
