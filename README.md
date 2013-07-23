@@ -23,8 +23,7 @@
 
 #### Alfred
 
-* copy the script and the xml file into *~/Library/Scripts*
-* edit the **SugarLookupPrefs.xml** file and add your username and password
-* compile the AppleScript: `osacompile -o SugarLookup.scpt SugarLookup.applescript`
-* Install the Alfred workflow (requires Powerpack)
-* Try it: `sl bug 12345` (customize the workflow to change the Alfred keyword)
+* install the `SugarLookup SOAP.alfredworkflow` file into Alfred (required the Powerpack)
+* open Alfred's preferences, click the `Workflows` tab, right click the new workflow and `Show in Finder`
+* Open the prefs.php and customize your username/password
+* Enjoy!
