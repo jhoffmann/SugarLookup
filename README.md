@@ -7,9 +7,9 @@
 
 * Install the `SugarLookup SOAP.alfredworkflow` file into Alfred (required the Powerpack)
 * To configure the workflow, run the following commands in an Alfred prompt
-  * sugarcrm host https://<hostname here>
-  * sugarcrm user <username here>
-  * sugarcrm password <password here>
+  * sugarcrm host `https://hostname here`
+  * sugarcrm user `username here`
+  * sugarcrm password `password here`
 * Enjoy!
 
 #### LaunchBar
