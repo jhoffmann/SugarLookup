@@ -6,8 +6,10 @@
 #### Alfred (Best)
 
 * Install the `SugarLookup SOAP.alfredworkflow` file into Alfred (required the Powerpack)
-* open Alfred's preferences, click the `Workflows` tab, right click the new workflow and `Show in Finder`
-* Open the prefs.php and customize your username/password
+* To configure the workflow, run the following commands in an Alfred prompt
+  * sugarcrm host https://<hostname here>
+  * sugarcrm user <username here>
+  * sugarcrm password <password here>
 * Enjoy!
 
 #### LaunchBar
